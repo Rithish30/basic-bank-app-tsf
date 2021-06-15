@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_bg">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:background="@drawable/shape"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textacc"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:gravity="start"
+            android:text="@string/accid"
+            android:textColor="@color/textcolor"
+            android:textSize="24sp"></TextView>
+
+        <TextView
+            android:id="@+id/textname"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/textacc"
+            android:gravity="start"
+            android:text="@string/name"
+            android:textColor="@color/textcolor"
+            android:textSize="24sp"></TextView>
+
+        <TextView
+            android:id="@+id/textemail"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/textname"
+            android:gravity="start"
+            android:text="@string/email"
+            android:textColor="@color/textcolor"
+            android:textSize="24sp"></TextView>
+
+        <TextView
+            android:id="@+id/textbal"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/textemail"
+            android:gravity="start"
+            android:text="@string/balance"
+            android:textColor="@color/textcolor"
+            android:textSize="24sp"></TextView>
+
+        <EditText
+            android:id="@+id/Editcacc"
+            android:layout_width="260dp"
+            android:layout_height="56dp"
+            android:layout_toEndOf="@id/textacc"
+            android:layout_toRightOf="@id/textacc"
+            android:gravity="start"
+            android:hint="@string/enter_account_number"
+            android:textColor="@color/textcolor"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:autofillHints=""></EditText>
+
+        <EditText
+            android:id="@+id/Editcname"
+            android:layout_width="260dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/Editcacc"
+            android:layout_toEndOf="@id/textname"
+            android:layout_toRightOf="@id/textname"
+            android:gravity="start"
+            android:hint="@string/enter_user_name"
+            android:textColor="@color/textcolor"
+            android:textSize="24sp"
+            android:inputType="text"
+            android:autofillHints=""></EditText>
+
+        <EditText
+            android:id="@+id/Editcemail"
+            android:layout_width="260dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/Editcname"
+            android:layout_toEndOf="@id/textemail"
+            android:gravity="start"
+            android:hint="@string/enter_email"
+            android:textColor="@color/textcolor"
+            android:textSize="24sp"
+            android:inputType="textEmailAddress"
+            android:autofillHints=""
+            android:layout_toRightOf="@id/textemail"></EditText>
+
+        <EditText
+            android:id="@+id/Editbal"
+            android:layout_width="260dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/Editcemail"
+            android:layout_toEndOf="@id/textbal"
+            android:layout_toRightOf="@id/textbal"
+            android:gravity="start"
+            android:hint="@string/enter_balance"
+            android:textColor="@color/textcolor"
+            android:textSize="24sp"
+            android:inputType="number"></EditText>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/adduser2"
+        android:layout_width="257dp"
+        android:layout_height="49dp"
+        android:background="@drawable/shape"
+        android:text="@string/add_user"
+        android:textColor="@color/textcolor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.2"
+        android:onClick="handler"
+        />
+
+    <Button
+        android:id="@+id/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/shape"
+        android:text="@string/back"
+        android:textColor="@color/textcolor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adduser2"
+        app:layout_constraintVertical_bias="0.342" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

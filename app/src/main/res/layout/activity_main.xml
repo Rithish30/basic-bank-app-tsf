@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/ul"
+        android:layout_width="118dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/shape"
+        android:text="@string/users_list"
+        android:gravity="center"
+        android:textColor="#013669"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/transactions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/transactions"
+        android:layout_width="147dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/shape"
+        android:text="@string/see_transactions"
+        android:textColor="#013669"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="167dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/bankapp"
+        android:gravity="center"
+        android:textColor="#013669"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="298dp"
+        android:layout_height="218dp"
+        android:background="#9EA8DB"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.768"
+        app:srcCompat="@drawable/bluelogo" />
+
+    <Button
+        android:id="@+id/addu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/shape"
+        android:textColor="#013669"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/transactions" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

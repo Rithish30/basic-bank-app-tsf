@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">basic bank app</string>
+    <string name="users_list">users list</string>
+    <string name="see_transactions">see transactions</string>
+    <string name="bankapp">BANKAPP</string>
+    <string name="todo">TODO</string>
+    <string name="go_back">Go Back</string>
+    <string name="send">send</string>
+    <string name="home">Home</string>
+    <string name="name">Name:</string>
+    <string name="accno">Accno:</string>
+    <string name="email">email:</string>
+    <string name="balance">Balance:</string>
+    <string name="c_accno">c_Accno</string>
+    <string name="cname">cname</string>
+    <string name="c_email">c_email</string>
+    <string name="c_balance">c_Balance</string>
+    <string name="userlist">USERLIST</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="cancel_transaction">Cancel Transaction</string>
+    <string name="complete_transaction">Complete Transaction</string>
+    <string name="receiverlist">RECEIVERLIST</string>
+    <string name="accnum">AccNum</string>
+    <string name="accid">AccId:</string>
+    <string name="enter_account_number">Enter account number</string>
+    <string name="enter_email">Enter email</string>
+    <string name="add_user">Add User</string>
+    <string name="enter_user_name">Enter user name</string>
+    <string name="enter_balance">enter balance</string>
+    <string name="back">Back</string>
+</resources>
